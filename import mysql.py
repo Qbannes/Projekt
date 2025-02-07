@@ -14,7 +14,7 @@ def anzeigen_film():
  daten = mycursor.fetchall()
  for row in daten:
      print(row)
-# Abfrage
+# limitierte Abfrage
 def anzeigen_actor():
  mycursor.execute("SELECT * FROM actor LIMIT 25")
  daten = mycursor.fetchall()
